@@ -1,0 +1,125 @@
+header, hgroup, nav, footer, figure, figcaption, aside, section, article {
+    display: block;
+}
+
+body {
+    color: #666666;
+    font-family: Arial, Helvetica, sans-serif;
+    background-image: url("ptrbackground.jpg");
+    background-repeat: repeat-x;
+    margin: auto;
+    height: 100%;
+
+#wrapper {
+    width: 80%;
+    min-width: 600px;
+    margin: 50px auto 0 auto;
+    background-color: white;
+}
+
+h1 {
+    margin-bottom: 0;
+    padding: 10px;
+    color: white;
+    background-image: url("sunset.jpg");
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+}
+
+h2 {
+    color: #3399CC;
+    margin: 0px 0px 20px 0px;
+}
+
+nav {
+    width: 160px;
+    background-color: #90C8E3;
+    padding: 20px;
+    margin-right: 30px;
+    display: table-cell;
+    
+}
+
+
+nav ul {
+    font-size: 1.3em;
+    list-style-type: none;
+    padding: 0;
+    margin: 0px;
+}
+
+nav li {
+    margin-bottom: 3px;
+}
+
+nav a {
+    text-decoration: none;
+    color: #001f54;
+    font-weight: bold;
+}
+
+nav a:visited {
+    color: #344873;
+}
+
+nav a:hover {
+    color: #FFFFFF;
+}
+
+/* Content on the right */
+#content {
+    display: table-cell;
+    padding: 20px;
+    background-color: #FFFFFF;
+    
+}
+
+
+img {
+    float: left;
+    margin: 0px 20px 20px 0px;
+    max-width: 100%;
+    height: auto;
+}
+
+#contact {
+    margin-left: 0px;
+}
+
+#content ul {
+    list-style-image: url(marker.gif);
+    padding-left: 0;
+}
+
+#content ul li {
+    padding-left: 40px;
+    text-indent: 0px;
+    list-style-position: inside;
+}
+
+#contact {
+    font-size: 90%;
+}
+
+h1, h2 {
+    font-family: Georgia, "Times New Roman", serif;
+}
+
+span {
+    color: #2862bf;
+    font-weight: bold;
+}
+
+
+
+footer {
+    font-family: Georgia, "Times New Roman", serif;
+    text-align: left;
+    padding: 20px;
+    font-size: 0.8em;
+    color: #666666;
+
+    font-style: italic;
+    border-left: 200px solid #90C8E3; 
+}
+}
