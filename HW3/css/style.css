@@ -1,0 +1,104 @@
+/*
+Full Name: Hai Nguyen
+E-mail: hain_nguyen3@student.uml.edu
+Affiliation: UMass Lowell GUI Programming 1
+Date: 10/30/24
+Description: CSS for styling the interactive multiplication table app, including layout, colors, and sticky elements.
+Reference: https://www.w3schools.com/
+*/
+
+/* General Page Styling */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f5;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    min-height: 100vh;
+    margin: 0;
+}
+
+#tableForm {
+    border: 1px solid #ccc;
+    padding: 20px;
+    margin: 20px;
+    background-color: #e9ecef;
+    border-radius: 5px;
+    text-align: left;
+}
+
+#tableForm label {
+    display: block;
+    margin: 10px 0 5px;
+}
+
+#tableForm input {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 10px;
+}
+
+#tableForm button {
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+#tableForm button:hover {
+    background-color: #0056b3;
+}
+
+#tableContainer {
+    overflow: auto;
+    max-width: 80%;
+    max-height: 500px;
+    margin-top: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+table {
+    border-collapse: collapse;
+    width: 100%;
+    text-align: center;
+}
+
+th, td {
+    padding: 10px;
+    border: 1px solid #333;
+}
+
+/* Alternating row colors */
+tr:nth-child(even) {
+    background-color: #e6f7ff;
+}
+
+th {
+    position: sticky;
+    top: 0;
+    background-color: #007bff;
+    color: white;
+    z-index: 2; /* Keeps header above other content */
+}
+
+/* Sticky first column */
+td:first-child,
+th:first-child {
+    position: sticky;
+    left: 0;
+    background-color: #007bff;
+    font-weight: bold;
+    z-index: 1; /* Keeps the first column on top */
+}
+
+
+tr:nth-child(even) td {
+    background-color: #e6f7ff;
+}
+
+tr:nth-child(odd) td {
+    background-color: #ffffff;
+}

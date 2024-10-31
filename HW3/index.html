@@ -1,0 +1,40 @@
+<!--
+Full Name: Hai Nguyen
+E-mail: hain_nguyen3@student.uml.edu
+Affiliation: UMass Lowell GUI Programming 1
+Date: 10/30/24
+Description: This HTML file provides the layout for an interactive multiplication table app.
+Reference: https://www.w3schools.com/
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Interactive Multiplication Table</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <div id="tableForm">
+        <h3>Please enter the table ranges</h3>
+        <label for="startX">Minimum Column Value</label>
+        <input type="number" id="startX" min="-50" max="50" required>
+        
+        <label for="endX">Maximum Column Value</label>
+        <input type="number" id="endX" min="-50" max="50" required>
+        
+        <label for="startY">Minimum Row Value</label>
+        <input type="number" id="startY" min="-50" max="50" required>
+        
+        <label for="endY">Maximum Row Value</label>
+        <input type="number" id="endY" min="-50" max="50" required>
+        
+        <button onclick="generateTable()">Regenerate Table</button>
+    </div>
+    <div id="tableContainer">
+        <table id="multiplicationTable"></table>
+    </div>
+    <script src="js/script.js"></script>
+</body>
+</html>
